@@ -1,0 +1,135 @@
+@import "./reset.css";
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,700,);
+
+body{
+    min-height: 100vh;
+    font-family: Rubik;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+.header{
+    width: 100%;
+    padding: 40px 15px 50px;
+    background: linear-gradient(92.7deg, #4CB8C4 0%, #3CD3AD 100%), #232323;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    margin-bottom: 20px;
+    font-size: 44px; 
+    font-weight: 700;
+    line-height: 1.18;
+    text-align: center;
+    color: #fff;
+}
+.form{
+
+    height: 54px;
+    border-radius: 6px;
+    background-color: #fff;
+    display: flex;
+    width: 460px;
+    justify-content: space-between;
+}
+.input{
+    padding: 15px;
+
+    line-height: 1;
+    Font-size: 20px;
+    color: #000;
+    font-weight: 300;
+    width: 70%;
+}
+.btn{
+    width: 145px;
+    height: 54px;
+    border-radius: 6px;
+    background-color: #ED3052;
+
+    Font-style: Medium;
+    Font-size: 20px;
+    line-height: 1;
+    color: #fff;
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: 20px;
+    padding: 10px;
+    box-shadow: 0px 5px 20px 0px #1B6C7240;
+    background-color: #fff;
+    border-radius: 6px;
+    width: 360px;
+}
+.card::before{
+
+    content: '';
+
+    position: absolute;
+    /* background-color: red; */
+    bottom: -10px;
+    z-index: -1;
+    width: calc(100% - 20px);
+    height: 100%;
+
+
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(27, 108, 114, 0.25);
+    border-radius: 6px;
+}
+.card-city{
+    font-weight: 500;
+    font-size: 28px;
+    color: #000000;
+}
+.card-city span{
+    display: inline-block;
+    border-radius: 6px;
+    padding: 3px 5px;
+    background: #E5464F;
+    vertical-align: text-top;
+
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.card-weather{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-value{    
+    color: #000;
+    font-size: 92px;
+    line-height: 1;
+}
+.card-value sup{
+    font-size: 50%;
+}
+.card-describtion{
+    font-size: 24px;
+}
+.card-img{
+    width: 127px;
+    height: 127px;
+}
+footer{
+    padding: 7px 15px 8px;
+    height: 32px;
+    background-color: #E3F1EE ;
+    width: 100%;
+    margin-top: auto;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+
+    text-align: center;
+
+    color: #2E7695;
+}
